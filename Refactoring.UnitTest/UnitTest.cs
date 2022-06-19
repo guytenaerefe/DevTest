@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Refactoring;
+    using Shapes;
 
     [TestClass]
     public class UnitTest
@@ -77,43 +78,6 @@
             Assert.AreEqual(RectangleSurfaceArea, surfaceArea);
         }
 
-        [TestMethod]
-        public void CalculateSurfaceAreas()
-        {
-            // Arrange
-            Triangle triangle = new Triangle();
-            triangle.Height = TriangleHeight;
-            triangle.Width = TriangleWidth;
-
-            Circle circle = new Circle();
-            circle.Radius = CircleRadius;
-
-            Square square = new Square();
-            square.Side = SquareSide;
-
-            Rectangle rectangle = new Rectangle();
-            rectangle.Height = RectangleHeight;
-            rectangle.Width = RectangleWidth;
-
-            // TODO: Implement a new Trapezoid shape
-
-            double[] expectedSurfaceAreas = new double[] { TriangleSurfaceArea, CircleSurfaceArea, SquareSurfaceArea, RectangleSurfaceArea };
-
-            // Act
-            SurfaceAreaCalculator surfaceAreaCalculator = new SurfaceAreaCalculator();
-            surfaceAreaCalculator.Add(triangle);
-            surfaceAreaCalculator.Add(circle);
-            surfaceAreaCalculator.Add(square);
-            surfaceAreaCalculator.Add(rectangle);
-            // TODO: surfaceAreaCalculator.Add(trapezoid);
-            surfaceAreaCalculator.CalculateSurfaceAreas();
-            double[] surfaceAreas = surfaceAreaCalculator.arrSurfaceAreas;
-
-            // Assert
-            Assert.AreEqual(expectedSurfaceAreas[0], surfaceAreas[0]);
-            Assert.AreEqual(expectedSurfaceAreas[1], surfaceAreas[1]);
-            Assert.AreEqual(expectedSurfaceAreas[2], surfaceAreas[2]);
-            Assert.AreEqual(expectedSurfaceAreas[3], surfaceAreas[3]);
-        }
+        
     }
 }
