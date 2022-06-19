@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refactoring", "Refactoring\Refactoring.csproj", "{A0F23B7E-84F3-4082-92A7-0C72F6D32848}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refactoring.UnitTest", "Refactoring.UnitTest\Refactoring.UnitTest.csproj", "{3E98232D-A7C6-4BCD-9D41-4C27439EF3C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{99053338-1D34-4BB2-8238-E643569B0221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{3E98232D-A7C6-4BCD-9D41-4C27439EF3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E98232D-A7C6-4BCD-9D41-4C27439EF3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E98232D-A7C6-4BCD-9D41-4C27439EF3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99053338-1D34-4BB2-8238-E643569B0221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99053338-1D34-4BB2-8238-E643569B0221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99053338-1D34-4BB2-8238-E643569B0221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99053338-1D34-4BB2-8238-E643569B0221}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B420140D-BEA9-4E24-917E-D6360B70EC81}
 	EndGlobalSection
 EndGlobal
