@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Refactoring.code.Exceptions
 {
-    internal class InvalidCommandException : Exception
+    public class InvalidCommandException : Exception
     {
         public InvalidCommandException(string explanation) : base(explanation)
         {

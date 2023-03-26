@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Refactoring.code
 {
-    internal static class UserCommandParser
+    public static class UserCommandParser
     {
         public static List<UserCommand> GetAvailableCommands()
         {
@@ -26,24 +26,12 @@ namespace Refactoring.code
             };
 
             return userCommands;
-
-
-            //this.Logger.Log("commands:");
-            //this.Logger.Log("- create square {double} (create a new square)");
-            //this.Logger.Log("- create circle {double} (create a new circle)");
-            //this.Logger.Log("- create rectangle {height} {width} (create a new rectangle)");
-            //this.Logger.Log("- create triangle {height} {width} (create a new triangle)");
-            //this.Logger.Log("- print (print the calculated surface areas)");
-            //this.Logger.Log("- calculate (calulate the surface areas of the created shapes)");
-            //this.Logger.Log("- reset (reset)");
-            //this.Logger.Log("- exit (exit the loop)");
         }
 
         public static UserCommand GetCommandByAction(CommandAction action, ShapeType? shapeType)
         {            
             return GetAvailableCommands().FirstOrDefault(x => x.Action == action && x.ShapeType == shapeType);
         }
-
 
         public static UserCommand ParseUserCommandString(string userCommandString)
         {

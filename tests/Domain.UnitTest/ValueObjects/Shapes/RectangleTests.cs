@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 namespace Domain.UnitTest.ValueObjects.Shapes
 {
     [TestClass]
-    public class CircleTests
+    public class RectangleTests
     {
         [TestMethod]
-        [DataRow(0.0, 0.0)]
-        [DataRow(1.0, Math.PI * 1.0 * 1.0)]
-        [DataRow(100.123, Math.PI * 100.123 * 100.123)]
-        public void CalculateSurfaceArea_Should_ReturnCorrectValue(double radius, double expectedSurfaceArea)
+        [DataRow(0.0, 0.0, 0.0)]
+        [DataRow(1.0, 3.0, 1.0 * 3.0)]
+        [DataRow(100.123, 99.99, 100.123 * 99.99)]
+        public void CalculateSurfaceArea_Should_ReturnCorrectValue(double width, double height, double expectedSurfaceArea)
         {
             // Arrange
 
 
             // Act
-            Circle circle = new Circle(Length.Create(radius));
-            SurfaceArea surfaceArea = circle.CalculateSurfaceArea();
+            Rectangle rectangle = new Rectangle(Length.Create(width), Length.Create(height));
+            SurfaceArea surfaceArea = rectangle.CalculateSurfaceArea();
 
             // Assert
             Assert.AreEqual(expectedSurfaceArea, surfaceArea.Value);

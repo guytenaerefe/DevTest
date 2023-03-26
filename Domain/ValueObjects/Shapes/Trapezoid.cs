@@ -9,10 +9,16 @@ namespace Domain.ValueObjects
 {
     public class Trapezoid : IShape
     {
+        public Length BottomWidth { get; set; }
+        public Length TopWidth { get; set; }
         public Length Height { get; set; }
 
-        public Length TopWidth { get; set; }
-        public Length BottomWidth { get; set; }
+        public Trapezoid(Length bottomWidth, Length topWidth, Length height)
+        {
+            BottomWidth = bottomWidth;
+            TopWidth = topWidth;
+            Height = height;
+        }
 
         public SurfaceArea CalculateSurfaceArea()
         {

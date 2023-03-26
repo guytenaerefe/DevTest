@@ -9,9 +9,15 @@ namespace Domain.ValueObjects
 {
     public class Triangle : IShape
     {
+        public Length Width { get; set; }
         public Length Height { get; set; }
 
-        public Length Width { get; set; }
+
+        public Triangle(Length width, Length height)
+        {
+            Width = width; 
+            Height = height;
+        }
 
         public SurfaceArea CalculateSurfaceArea()
         {

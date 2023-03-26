@@ -11,6 +11,11 @@ namespace Domain.ValueObjects
     {
         public Length Side { get; set; }
 
+        public Square(Length side)
+        {
+            Side = side;
+        }
+
         public SurfaceArea CalculateSurfaceArea()
         {
             return SurfaceArea.Create(Side * Side);

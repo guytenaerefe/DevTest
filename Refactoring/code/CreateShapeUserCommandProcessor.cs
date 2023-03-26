@@ -14,7 +14,6 @@ namespace Refactoring.code
 {
     internal static class CreateShapeUserCommandProcessor
     {
-
         public static IShape CreateShapeFromUserCommand(UserCommand userCommand)
         {
             if (userCommand.Action != CommandAction.create)
@@ -25,45 +24,32 @@ namespace Refactoring.code
             switch (userCommand.ShapeType)
             {
                 case ShapeType.square:
-                    Square square = new Square()
-                    {
-                        Side = Length.Create(userCommand.ParameterValues[0].Value)
-                    };
+                    Square square = new Square(Length.Create(userCommand.ParameterValues[0].Value));
                     return square;
 
                 case ShapeType.circle:
-                    Circle circle = new Circle()
-                    {
-                        Radius= Length.Create(userCommand.ParameterValues[0].Value)
-                    };
+                    Circle circle = new Circle(Length.Create(userCommand.ParameterValues[0].Value));
                     return circle;
 
                 case ShapeType.triangle:
-                    Triangle triangle = new Triangle()
-                    {
-                        Height = Length.Create(userCommand.ParameterValues[0].Value),
-                        Width = Length.Create(userCommand.ParameterValues[1].Value)
-                    };
+                    Triangle triangle = new Triangle(
+                        Length.Create(userCommand.ParameterValues[0].Value),
+                        Length.Create(userCommand.ParameterValues[1].Value));
                     return triangle;
 
                 case ShapeType.rectangle:
-                    Rectangle  rectangle = new Rectangle()
-                    {
-                        Height = Length.Create(userCommand.ParameterValues[0].Value),
-                        Width = Length.Create(userCommand.ParameterValues[1].Value)
-                    };
+                    Rectangle rectangle = new Rectangle(
+                        Length.Create(userCommand.ParameterValues[0].Value),
+                        Length.Create(userCommand.ParameterValues[1].Value));
                     return rectangle;
 
                 case ShapeType.trapezoid:
-                    Trapezoid trapezoid = new Trapezoid()
-                    {
-                        Height = Length.Create(userCommand.ParameterValues[0].Value),
-                        BottomWidth = Length.Create(userCommand.ParameterValues[1].Value),
-                        TopWidth = Length.Create(userCommand.ParameterValues[2].Value)
-                    };
+                    Trapezoid trapezoid = new Trapezoid(
+                        Length.Create(userCommand.ParameterValues[0].Value),
+                        Length.Create(userCommand.ParameterValues[1].Value),
+                        Length.Create(userCommand.ParameterValues[2].Value));
                     return trapezoid;
             }
-
 
             throw new InvalidCommandException($"Invalid ShapeType: {userCommand.ShapeType}");
         }

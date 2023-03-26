@@ -11,6 +11,11 @@ namespace Domain.ValueObjects
     {
         public Length Radius { get; set; }
 
+        public Circle(Length radius)
+        {
+            Radius = radius;
+        }
+
         public SurfaceArea CalculateSurfaceArea()
         {
             return SurfaceArea.Create(Math.PI * Radius * Radius);

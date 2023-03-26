@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Refactoring.code.ValueObjects
 {
-    internal class UserCommand
+    public class UserCommand
     {
         public CommandAction Action { get; set; }
 
@@ -76,11 +76,15 @@ namespace Refactoring.code.ValueObjects
             {
                 throw new InvalidCommandException("Not all parameters have a value");
             }
-        
+            if (ParameterValues.Count > Parameters.Count)
+            {
+                throw new InvalidCommandException("Too many parameters specified");
+            }
+
         }
     }
 
-    internal class UserCommandParameter
+    public class UserCommandParameter
     {
         public string Token { get; set; }
 
@@ -94,7 +98,7 @@ namespace Refactoring.code.ValueObjects
         }
     }
 
-    internal class UserCommandParameterValue
+    public class UserCommandParameterValue
     {
         public double Value { get; private set; }
 

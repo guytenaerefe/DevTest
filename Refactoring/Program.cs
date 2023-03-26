@@ -63,13 +63,14 @@ namespace Refactoring
 
         static void ProcessUserCommand(UserCommand userCommand, SurfaceAreaCalculator surfaceAreaCalculator)
         {
-            WriteLineToScreen($"Command: {userCommand.Description}");
+          //  WriteLineToScreen($"Command: {userCommand.Description}");
 
             switch (userCommand.Action)
             {
                 case CommandAction.create:
                     IShape createdShape = CreateShapeUserCommandProcessor.CreateShapeFromUserCommand(userCommand);
                     surfaceAreaCalculator.AddShape(createdShape);
+                    WriteLineToScreen($"{createdShape.GetType().Name} created");
                     break;
 
                 case CommandAction.print:
@@ -82,6 +83,7 @@ namespace Refactoring
 
                 case CommandAction.calculate:
                     surfaceAreaCalculator.CalculateSurfaceAreas();
+                    WriteLineToScreen("Surfaces calculated");
                     break;
             }
 
@@ -95,9 +97,15 @@ namespace Refactoring
             ReadOnlyCollection<IShape> shapes = surfaceAreaCalculator.Shapes;
             ReadOnlyCollection<SurfaceArea> calculatedSurfaceAreas = surfaceAreaCalculator.CalculatedSurfaceAreas;
 
+            if (!shapes.Any())
+            {
+                WriteLineToScreen("No shapes available");
+                return;
+            }
+
             if (calculatedSurfaceAreas.Count != shapes.Count)
             {
-                WriteLineToScreen("Please calulate the surface areas of the created shapes");
+                WriteLineToScreen("Please calculate the surface areas of the created shapes first");
                 return;
             }
 

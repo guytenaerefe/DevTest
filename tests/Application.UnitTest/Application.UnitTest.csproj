@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C39CDB6-AA14-4569-A1CD-721F2E382DCD}</ProjectGuid>
+    <ProjectGuid>{E6B9F05B-B527-48BD-95C7-094BB167EA2E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Domain.UnitTest</RootNamespace>
-    <AssemblyName>Domain.UnitTest</AssemblyName>
+    <RootNamespace>Application.UnitTest</RootNamespace>
+    <AssemblyName>Application.UnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\SurfaceAreaCollectionTests.cs" />
+    <Compile Include="Collections\ShapeCollectionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValueObjects\Shapes\RectangleTests.cs" />
-    <Compile Include="ValueObjects\SurfaceAreaTests.cs" />
-    <Compile Include="ValueObjects\LengthTests.cs" />
-    <Compile Include="ValueObjects\Shapes\CircleTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Application\Application.csproj">
+      <Project>{bc67e46a-e51f-42e8-bad0-66d647764ef7}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Domain\Domain.csproj">
       <Project>{2cdf6ebc-cc83-4845-9014-2d1c2f381f6c}</Project>
       <Name>Domain</Name>

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Domain.UnitTest.ValueObjects
 {
     [TestClass]
-    public class LengthTests
+    public class SurfaceAreaTests
     {
         [TestMethod]
         [DataRow(0.0)]
@@ -19,10 +19,10 @@ namespace Domain.UnitTest.ValueObjects
         public void Create_WithPositiveValue_Should_ReturnCorrectObject(double value)
         {
             // Arrange
-                        
+
 
             // Act
-            Length length = Length.Create(value);
+            SurfaceArea length = SurfaceArea.Create(value);
 
             // Assert
             Assert.AreEqual(value, length.Value);
@@ -37,7 +37,7 @@ namespace Domain.UnitTest.ValueObjects
             // Act
             
             // Assert
-            Assert.ThrowsException<InvalidLengthException>(() => Length.Create(negativeValue));
+            Assert.ThrowsException<InvalidLengthException>(() => SurfaceArea.Create(negativeValue));
         }
     }
 }
