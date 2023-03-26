@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Collections\ShapeCollection.cs" />
+    <Compile Include="Collections\SurfaceAreaCollection.cs" />
+    <Compile Include="Factories\SurfaceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

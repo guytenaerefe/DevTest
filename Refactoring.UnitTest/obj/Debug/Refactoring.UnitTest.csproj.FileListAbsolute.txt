@@ -6,3 +6,14 @@
 \\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.csprojResolveAssemblyReference.cache
 \\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.dll
 \\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.pdb
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.UnitTest.dll
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.UnitTest.pdb
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.exe
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.pdb
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.exe.config
+D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.csproj.AssemblyReference.cache
+D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.csproj.CoreCompileInputs.cache
+D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.csproj.CopyComplete
+D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.dll
+D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.pdb

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application
+namespace Application.Factories
 {
-    public class Class1
+    internal class SurfaceFactory
     {
     }
 }

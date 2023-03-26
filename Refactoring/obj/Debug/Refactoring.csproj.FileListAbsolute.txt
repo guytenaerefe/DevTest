@@ -12,3 +12,8 @@ D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.csproj.SuggestedBindingRedire
 D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.csproj.CoreCompileInputs.cache
 D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.exe
 D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.pdb
+D:\Repos\DevTest\Refactoring\bin\Debug\Domain.dll
+D:\Repos\DevTest\Refactoring\bin\Debug\Domain.pdb
+D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.csproj.CopyComplete
+D:\Repos\DevTest\Refactoring\bin\Debug\Application.dll
+D:\Repos\DevTest\Refactoring\bin\Debug\Application.pdb
