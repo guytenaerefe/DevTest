@@ -63,8 +63,6 @@ namespace Refactoring
 
         static void ProcessUserCommand(UserCommand userCommand, SurfaceAreaCalculator surfaceAreaCalculator)
         {
-          //  WriteLineToScreen($"Command: {userCommand.Description}");
-
             switch (userCommand.Action)
             {
                 case CommandAction.create:
@@ -86,9 +84,6 @@ namespace Refactoring
                     WriteLineToScreen("Surfaces calculated");
                     break;
             }
-
-
-
         }
 
 
@@ -99,13 +94,13 @@ namespace Refactoring
 
             if (!shapes.Any())
             {
-                WriteLineToScreen("No shapes available");
+                WriteLineToScreen("Please create shapes first");
                 return;
             }
 
             if (calculatedSurfaceAreas.Count != shapes.Count)
             {
-                WriteLineToScreen("Please calculate the surface areas of the created shapes first");
+                WriteLineToScreen("Please calculate the surface areas of the shapes first");
                 return;
             }
 
