@@ -19,6 +19,19 @@
         private const double RectangleWidth = 67d;
         private const double RectangleSurfaceArea = 1541d;
 
+        [TestMethod]
+        public void TriangleCalculateSurfaceArea()
+        {
+            // Arrange
+            
+            // Act
+            
+
+            // Assert
+            Assert.AreEqual(1, 1);
+        }
+
+
         //[TestMethod]
         //public void TriangleCalculateSurfaceArea()
         //{

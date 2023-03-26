@@ -17,3 +17,7 @@ D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.csproj.Core
 D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.csproj.CopyComplete
 D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.dll
 D:\Repos\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.pdb
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Domain.dll
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Application.dll
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Domain.pdb
+D:\Repos\DevTest\Refactoring.UnitTest\bin\Debug\Application.pdb
