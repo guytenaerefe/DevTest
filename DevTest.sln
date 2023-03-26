@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refactoring.UnitTest", "Ref
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{2CDF6EBC-CC83-4845-9014-2D1C2F381F6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{BC67E46A-E51F-42E8-BAD0-66D647764EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,14 @@ Global
 		{3E98232D-A7C6-4BCD-9D41-4C27439EF3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E98232D-A7C6-4BCD-9D41-4C27439EF3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E98232D-A7C6-4BCD-9D41-4C27439EF3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CDF6EBC-CC83-4845-9014-2D1C2F381F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CDF6EBC-CC83-4845-9014-2D1C2F381F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CDF6EBC-CC83-4845-9014-2D1C2F381F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CDF6EBC-CC83-4845-9014-2D1C2F381F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC67E46A-E51F-42E8-BAD0-66D647764EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC67E46A-E51F-42E8-BAD0-66D647764EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC67E46A-E51F-42E8-BAD0-66D647764EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC67E46A-E51F-42E8-BAD0-66D647764EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
