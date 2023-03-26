@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Refactoring.code;
 using Refactoring.code.Exceptions;
+using Refactoring.code.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,7 +56,7 @@ namespace RefactoringUI.Tests
         [DataRow("create rectangle ")]
         [DataRow("create triangle 100 100 100")]
         [DataRow("create trapezoid 100 50 100 100")]
-        public void When_LengthParametersAreInCorrect_ParseUserCommandString_Should_InvalidCommandException(string userCommandString)
+        public void When_LengthParametersAreInCorrect_ParseUserCommandString_Should_ThrowInvalidCommandException(string userCommandString)
         {
             // Arrange 
 
@@ -65,7 +66,41 @@ namespace RefactoringUI.Tests
             // Assert
         }
 
+        [TestMethod]
+        [DataRow(CommandAction.create, ShapeType.triangle)]
+        [DataRow(CommandAction.create, ShapeType.trapezoid)]
+        [DataRow(CommandAction.print, null)]
+        [DataRow(CommandAction.calculate, null)]
+        [DataRow(CommandAction.reset, null)]
+        public void GetCommandByAction_When_GivenValidParameters_Should_ReturnUserCommand(CommandAction commandAction, ShapeType? shapeType)
+        {
+            // Arrange 
+
+            // Act
+            var command = UserCommandParser.GetCommandByAction(commandAction, shapeType);
+
+            // Assert
+            Assert.IsNotNull(command);
+
+            Assert.AreEqual(commandAction, command.Action);
+            Assert.AreEqual(shapeType, command.ShapeType);
+        }
 
 
+        [TestMethod]
+        [DataRow(CommandAction.create, null)]
+        [DataRow(CommandAction.print, ShapeType.triangle)]
+        [DataRow(CommandAction.calculate, ShapeType.trapezoid)]
+        [DataRow(CommandAction.reset, ShapeType.trapezoid)]
+        public void GetCommandByAction_When_GivenInValidParameters_Should_ReturnUserCommand(CommandAction commandAction, ShapeType? shapeType)
+        {
+            // Arrange 
+
+            // Act
+            var command = UserCommandParser.GetCommandByAction(commandAction, shapeType);
+
+            // Assert
+            Assert.IsNull(command);            
+        }
     }
 }
