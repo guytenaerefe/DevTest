@@ -1,8 +1,0 @@
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.UnitTest.dll
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.UnitTest.pdb
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.exe
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\bin\Debug\Refactoring.pdb
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.csprojResolveAssemblyReference.cache
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.dll
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring.UnitTest\obj\Debug\Refactoring.UnitTest.pdb

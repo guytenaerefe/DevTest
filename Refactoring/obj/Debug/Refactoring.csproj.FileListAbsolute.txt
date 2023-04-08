@@ -1,6 +1,0 @@
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\bin\Debug\Refactoring.exe.config
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\bin\Debug\Refactoring.exe
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\bin\Debug\Refactoring.pdb
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\obj\Debug\Refactoring.csprojResolveAssemblyReference.cache
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\obj\Debug\Refactoring.exe
-\\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\obj\Debug\Refactoring.pdb
