@@ -4,3 +4,16 @@
 \\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\obj\Debug\Refactoring.csprojResolveAssemblyReference.cache
 \\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\obj\Debug\Refactoring.exe
 \\hde.intra\home\ISD\tigele-e\visual studio 2015\Projects\DevTest\Refactoring\obj\Debug\Refactoring.pdb
+D:\Repos\DevTest\Refactoring\bin\Debug\Refactoring.exe.config
+D:\Repos\DevTest\Refactoring\bin\Debug\Refactoring.exe
+D:\Repos\DevTest\Refactoring\bin\Debug\Refactoring.pdb
+D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.csproj.AssemblyReference.cache
+D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.csproj.SuggestedBindingRedirects.cache
+D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.csproj.CoreCompileInputs.cache
+D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.exe
+D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.pdb
+D:\Repos\DevTest\Refactoring\bin\Debug\Domain.dll
+D:\Repos\DevTest\Refactoring\bin\Debug\Domain.pdb
+D:\Repos\DevTest\Refactoring\obj\Debug\Refactoring.csproj.CopyComplete
+D:\Repos\DevTest\Refactoring\bin\Debug\Application.dll
+D:\Repos\DevTest\Refactoring\bin\Debug\Application.pdb
